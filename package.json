@@ -1,0 +1,43 @@
+{
+	"name": "pa-toggle-music",
+	"version": "0.0.1",
+	"license": "MIT",
+	"author": "Sebastian Meyer",
+	"description": "Toggle pulseaudio music input sinks",
+	"homepage": "https://github.com/bastimeyer/pa-toggle-music",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/bastimeyer/pa-toggle-music.git"
+	},
+	"engines": {
+		"node": ">= 6"
+	},
+	"os": [
+		"linux"
+	],
+	"devDependencies": {
+		"ava": "^0.23.0",
+		"@ava/babel-preset-stage-4": "^1.1.0",
+		"@ava/babel-preset-transform-test-files": "^3.0.0",
+		"babel-register": "^6.26.0",
+		"eslint": "^4.10.0",
+		"proxyquire": "^1.8.0",
+		"uglifyjs-webpack-plugin": "^1.0.1",
+		"webpack": "^3.8.1"
+	},
+	"scripts": {
+		"build": "webpack",
+		"eslint": "eslint ./src/** ./test/**",
+		"test": "ava"
+	},
+	"ava": {
+		"require": "babel-register",
+		"babel": "inherit"
+	},
+	"babel": {
+		"presets": [
+			"@ava/stage-4",
+			"@ava/transform-test-files"
+		]
+	}
+}
