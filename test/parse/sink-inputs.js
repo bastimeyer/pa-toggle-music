@@ -98,6 +98,7 @@ Sink Input #4
 		qux:
 			foo.bar = "baz"
 			foo.bar.baz = "qux"
+			foo.bar.qux = ""
 `;
 
 	const parsed = parseSinkInputs( input );
@@ -132,7 +133,8 @@ Sink Input #4
 		baz: {
 			qux: {
 				"foo.bar": "baz",
-				"foo.bar.baz": "qux"
+				"foo.bar.baz": "qux",
+				"foo.bar.qux": ""
 			}
 		}
 	});

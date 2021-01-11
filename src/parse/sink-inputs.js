@@ -1,6 +1,6 @@
 const reSinkInputNumber = /^Sink Input #(\d+)$/;
 const reSinkInputData = /^(\t+)(?:( +)|([^:]+):\s*)(\S.*)?$/;
-const reSinkInputProperties = /^(\t+)(\S+) = "(.+)"$/;
+const reSinkInputProperties = /^(\t+)(\S+) = "(.*)"$/;
 
 
 /**
